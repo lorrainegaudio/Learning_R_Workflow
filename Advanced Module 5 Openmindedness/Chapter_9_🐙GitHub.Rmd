@@ -3,62 +3,12 @@ title: "Chapter 9"
 subtitle: "Git and GitHub"
 author: "by Lorraine Gaudio"
 date: "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r eval=FALSE, include=FALSE}
-title: "Chapter 9" 
-subtitle: "Git and GitHub"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
-####
-title: "Chapter 9" 
-subtitle: "Git and GitHub"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
-```
-
 
 # Overview
 
@@ -143,7 +93,7 @@ Before downloading anything, check whether RStudio can already find Git. If RStu
 
 🎯 From the **Tools** menu, click **Global Options**.
 
-![Figure 2. Tools menu is selected and Global Options is at the bottom of the list](Tools_Global Options.png)
+![Figure 2. Tools menu is selected and Global Options is at the bottom of the list](/assets/images/ch09-github/Tools_Global Options.png)
 
 🗣 This opens the Global Options window. On the left side of the window is a list of settings.
 
@@ -153,7 +103,7 @@ Before downloading anything, check whether RStudio can already find Git. If RStu
 
 🎯 Click the **Git/SVN** tab.
 
-![Figure 3. Git/SVN option item shows version control settings.](Tools_Global Options_VersionControl.png)
+![Figure 3. Git/SVN option item shows version control settings.](/assets/images/ch09-github/Tools_Global Options_VersionControl.png)
 
 🎯 Make sure the box for **Enable version control interface for RStudio projects** is **checked.**
 
@@ -186,7 +136,7 @@ Before downloading anything, check whether RStudio can already find Git. If RStu
 
 The Git/SVN tab is the main check for this activity. The Terminal check is optional, but it can help confirm that Git works.
 
-![Figure 4. Screenshot of both the Terminal pane and the Git/SVN option window in Global Options.](check_for_git.png) 
+![Figure 4. Screenshot of both the Terminal pane and the Git/SVN option window in Global Options.](/assets/images/ch09-github/check_for_git.png) 
 
 In Figure 4, the Git/SVN option window in Global Options shows the path to the Git executable as well, confirming that Git is installed and recognized by RStudio. The Terminal pane shows the command which git and the output is /mingw64/bin/git, which indicates that Git is installed and located at that path. Your path will likely be different, but the key is that it shows a path to Git rather than an error message. The git --version command also shows the version of Git installed. If Git is not installed, it will return an error message, such as git: command not found.
 
@@ -214,7 +164,7 @@ git --version
 - If you see a Git version number, Git is installed.
 - If you see an error message, Git may not be installed or RStudio may not be able to find it.
 
-![Figure 5. git --version output examples](git_not_installed_error.png)
+![Figure 5. git --version output examples](/assets/images/ch09-github/git_not_installed_error.png)
 
 🗣 The Terminal check confirms whether Git responds to a command. The Git/SVN tab confirms whether RStudio knows where Git is installed.
 
@@ -512,7 +462,7 @@ git config --global --list
 
 🗣 This tells Git who is making the commits on your computer.
 
-![Figure 5. screenshot of a Git introduction.](git_identity.png)
+![Figure 5. screenshot of a Git introduction.](/assets/images/ch09-github/git_identity.png)
 
 In Figure 5, the Terminal tab in RStudio shows the commands used to set the Git identity. The command `git config --global user.name "Your Name"` sets the user name for Git commits, and `git config --global user.email "example@u.boisestate.edu"` sets the email address. The command `git config --global --list` displays the current Git configuration, confirming that the user name and email have been set correctly. The output shows the user name and email that will be associated with Git commits made from your computer. 
 
@@ -1599,7 +1549,7 @@ github_practice.Rmd
 
 ✅ If your local computer folder  and GitHub repo structure matches  the diagram below, you have completed the activity. 
 
-![Figure 1. Diagram of the folder structure on your computer and your GitHub Repository](Folder_Structure.png)
+![Figure 1. Diagram of the folder structure on your computer and your GitHub Repository](/assets/images/ch09-github/Folder_Structure.png)
 
 ---
 

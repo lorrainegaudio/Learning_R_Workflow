@@ -3,55 +3,11 @@ title: "Chapter 1"
 subtitle: "📍 Navigation"
 author: "by Lorraine Gaudio"
 date:   "`r paste(format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r eval=FALSE, include=FALSE}
-title: "Chapter 1"
-subtitle: "📍 Navigation"
-author: "by Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
-# ---
-title: "Chapter 1: RStudio Interface"
-author: "Lorraine Gaudio"
-date:   "`r paste(format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: false # Table of contents (TOC)
-    toc_depth: 2 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
 ```
 
 # Overview
@@ -80,7 +36,7 @@ In Chapter One you will learn how to:
 
 RStudio should already be installed on your computer. You can identify RStudio by its distinctive round blue icon as shown in Figure 1. If you do not have RStudio installed, please refer to the installation instructions provided in the Preface.
 
-![Figure 1. The RStudio icon.](RStudio_roundlogo.png)
+![Figure 1. The RStudio icon.](/assets/images/ch01-navigation/RStudio_roundlogo.png)
 
 Grey code boxes like this one below contains instructions for you to follow. Complete these tasks to aid your learning. 
 
@@ -95,7 +51,7 @@ You should see a window with four main panes (see Figure 2).
 3. **Script Editor (Source)** – where you write and save your R scripts and notebooks 
 4. **Files and Help** – where you browse files and access plots, packages, and help pages
 
-![Figure 2. The RStudio interface with four panes: Console, Environment, Script Editor, and Files/Help.](r_studio.png)
+![Figure 2. The RStudio interface with four panes: Console, Environment, Script Editor, and Files/Help.](/assets/images/ch01-navigation/r_studio.png)
 
 💡 **Tip:** If your layout looks different, that’s okay—RStudio lets you move panes. Look at the **tab labels** in each pane (for example, *Console*, *Environment*, *Files*, *Help*) to identify them. You can always reset the layout later using **Tools → Global Options → Pane Layout**.
 
@@ -133,7 +89,7 @@ R performs standard operations like addition (`+`), subtraction (`-`), multiplic
 (2 + 3) * 4 - 5 / (1 + 1) # Mixes several operations
 ```
 
-![Figure 3. The RStudio software showing the Console pane running simple calculations.](r_studio_console.png)
+![Figure 3. The RStudio software showing the Console pane running simple calculations.](/assets/images/ch01-navigation/r_studio_console.png)
 
 🗣 R prints results immediately. 
 
@@ -196,7 +152,7 @@ value <- 2 + 2
 <- 
 ```
 
-![Figure 4. The RStudio showing code typed in the Console pane and an object named "value" that is storing the number 4 in the Environment pane](environment.png)
+![Figure 4. The RStudio showing code typed in the Console pane and an object named "value" that is storing the number 4 in the Environment pane](/assets/images/ch01-navigation/environment.png)
 
 💡 **Tip:** The `=` symbol has a dual role in R: it acts as an assignment operator (interchangeable with `<-` in most contexts) and as a special syntactic token for binding named arguments within a function call. For practical programming in RStudio, you should use `<-` as the conventional assignment operator to avoid confusion with function arguments. 
 
@@ -207,7 +163,7 @@ value <- 2 + 2
 value
 ```
 
-![Figure 5. The RStudio Console pane printing the value of the object "value."](environment_print.png)
+![Figure 5. The RStudio Console pane printing the value of the object "value."](/assets/images/ch01-navigation/environment_print.png)
 
 💡 **Tip:** You can also use the `print()` function to display the value of an object. Type the object name inside of the parenthesis to use this function.
 
@@ -339,7 +295,7 @@ Method A. **Session Menu**
 # Use the menu to navigate to your course folder and select it.
 ```
 
-![Figure 6. The RStudio window's main menu bar shows "Session" and "Set Working Directory" selected, with the cursor hovering over "Choose Directory".](setwd_UI_session.png)
+![Figure 6. The RStudio window's main menu bar shows "Session" and "Set Working Directory" selected, with the cursor hovering over "Choose Directory".](/assets/images/ch01-navigation/setwd_UI_session.png)
 
 Method B. **Files Pane**
 
@@ -376,7 +332,7 @@ Method A. **Floppy disk icon**
 
 Click the **Save Workspace** icon in the Environment pane. This opens a dialog to choose a file name and location to save your workspace as an `.RData` file.
 
-![Figure 8. The RStudio Environment pane with the "Save Workspace" icon circled.](save_RData.png)
+![Figure 8. The RStudio Environment pane with the "Save Workspace" icon circled.](/assets/images/ch01-navigation/save_RData.png)
 
 
 🎯  Type "workspace" as the file name. 
@@ -447,7 +403,7 @@ Method A. **Environment Pane**
 
 - Click the 🧹 **broom icon** (Clear All) in the Environment pane to remove all objects.
 
-![Figure 9. The RStudio Environment pane with the "Clear All" broom icon circled.](clear_environment.png)
+![Figure 9. The RStudio Environment pane with the "Clear All" broom icon circled.](/assets/images/ch01-navigation/clear_environment.png)
 
 Method B. **`rm()` function**
 
@@ -609,7 +565,7 @@ total_revenue <- _______ * _______
 
 Identify the names of the Panes associated with each number in the image below.
 
-![Screenshot of the RStudio interface divided into four panes, each labeled with a large number. (1) Top-left pane is a workspace where you would write and edit code before running it. (2) Top-right pane is used to keep track of items created during your session and review what is currently available to use. (3) Bottom-left pane is where commands are executed and results, messages, and errors appear. (4) Bottom-right pane is used to browse files related to your work and access additional tools such as plots, packages, and help documentation.](Quiz_Question.png)
+![Screenshot of the RStudio interface divided into four panes, each labeled with a large number. (1) Top-left pane is a workspace where you would write and edit code before running it. (2) Top-right pane is used to keep track of items created during your session and review what is currently available to use. (3) Bottom-left pane is where commands are executed and results, messages, and errors appear. (4) Bottom-right pane is used to browse files related to your work and access additional tools such as plots, packages, and help documentation.](/assets/images/ch01-navigation/Quiz_Question.png)
 
 **Console**, **Environment**, **Script Editor (Source)**, **Files and Help** 
 

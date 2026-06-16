@@ -3,56 +3,11 @@ title: "Chapter 2"
 subtitle: "Scripts"
 author: "Lorraine Gaudio"
 date:   "`r paste(format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r eval=FALSE, include=FALSE}
-title: "Chapter 2"
-subtitle: "Scripts"
-author: "by Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
-# ---
-title: "Chapter 2"
-subtitle: "Scripts"
-author: "Lorraine Gaudio"
-date:   "`r paste(format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: false # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
 ```
 
 # Overview
@@ -97,7 +52,7 @@ Method A. **File Menu**
 
 2. Select New File and then R Script. 
 
-![Figure 1. The RStudio Script Editor pane with a script open.](new_rscript.png)
+![Figure 1. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/new_rscript.png)
 
 Method B. **Keyboard Shortcut**
 
@@ -123,7 +78,7 @@ nine <- 9
 
 🎯 Place your cursor on each line and click Run (or press Ctrl+Enter on Windows/Linux or Cmd+Return on macOS) to send that line to the Console where it executes.
 
-![Figure 5. The RStudio Script Editor pane with a script open.](run_script.png)
+![Figure 5. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/run_script.png)
 
 ```{r, eval=FALSE}
 # Run one line
@@ -131,7 +86,7 @@ nine <- 9
 
 🎯 Select multiple lines to run them together.
 
-![Figure 2. The RStudio Script Editor pane with a script open. Two lines are highlighted and both were run in the console using Ctrl+Enter.](run_script2.png)
+![Figure 2. The RStudio Script Editor pane with a script open. Two lines are highlighted and both were run in the console using Ctrl+Enter.](/assets/images/ch02-scripts/run_script2.png)
 
 
 ```{r, eval=FALSE}
@@ -140,7 +95,7 @@ nine <- 9
 
 🎯 Click Source to run the entire script at once.
 
-![Figure 3. The RStudio Script Editor pane with a script open.](run_source.png)
+![Figure 3. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/run_source.png)
 
 ```{r, eval=FALSE}
 # Source the entire script
@@ -158,7 +113,7 @@ Method A. **Save icon**
 
 1. Click the Save icon (floppy disk) in the toolbar of the Script Editor pane.
 
-![Figure 4. The RStudio Script Editor pane with a script open.](save_icon.png)
+![Figure 4. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/save_icon.png)
 
 Method B. **File Menu**
 

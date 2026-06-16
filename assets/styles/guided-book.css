@@ -1,0 +1,18 @@
+/* DATA-R 155 Guided Activity Book */
+
+:root {
+  --bsu-blue: #0033a0;
+  --bsu-orange: #d64309;
+}
+
+h1, h2, h3 {
+  color: var(--bsu-blue);
+}
+
+.callout {
+  border-radius: 10px;
+}
+
+code {
+  font-size: 0.95em;
+}

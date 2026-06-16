@@ -3,63 +3,12 @@ title: "Chapter 10"
 subtitle: "🔀And, Or, and Membership"
 author: "by Lorraine Gaudio"
 date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Summer 2026"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: false # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
+team: "Fall 2026"
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-```{r eval=FALSE, include=FALSE}
-title: "Chapter 10"
-subtitle: "And, Or, and Membership"
-author: "Lorraine Gaudio"
-#date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: false # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
-###
-title: "Chapter 10"
-subtitle: "And, Or, and Membership"
-author: "Lorraine Gaudio"
-#date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
-```
-
 
 # Overview
 
@@ -442,7 +391,7 @@ Let's explore each of these three new operators in more detail. In this section,
 Suppose we have two events: A and B. The **And** operator `&` returns `TRUE` only if **both** event A and event B are **true**. It returns `FALSE` if either event A or event B, or both, are false. The "and" is used to combine two or more conditions where all conditions must be true.
 
 ```{r And, out.width='40%', fig.align='center', fig.cap='Figure 1. Venn diagram showing the AND condition. The shaded area is the overlap between A and B, which means only observations that satisfy both conditions are included.', fig.alt='Venn diagram showing the AND operation, with only the overlapping area between A and B shaded.', echo=FALSE}
-knitr::include_graphics("And.png")
+knitr::include_graphics("/assets/images/ch10-andor/And.png")
 ```
 
 🎯 Filter `mtcars` to keep cars that are both automatic (`am == 0`) *and* have miles per gallon less than or equal to 22.
@@ -532,7 +481,7 @@ Suppose we have two events: A and B. The **Or** logical operator `|` returns `TR
 
 
 ```{r Or, out.width='40%', fig.align='center', fig.cap='Figure 2. Venn diagram showing the OR condition. The shaded area includes anything in A or B, which means observations that satisfy either condition, or both conditions, are included.', fig.alt='Venn diagram showing the inclusive OR operation, with both circles A and B shaded, including their overlap.', echo=FALSE} 
-knitr::include_graphics("Or.png")
+knitr::include_graphics("/assets/images/ch10-andor/Or.png")
 ```
 
 Use `|` when you want rows that satisfy at least one requirement. The `|` is located above the Enter key on your keyboard. It is the vertical bar and shares the key with the backslash `\`. Click and hold the Shift key to type `|`.

@@ -3,55 +3,11 @@ title: "Chapter 5"
 subtitle: "🛟Help!"
 author: "by Lorraine Gaudio"
 date: "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r eval=FALSE, include=FALSE}
-title: "Chapter 5"
-subtitle: "Help!"
-author: "by Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output:
-  pdf_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    fig_caption: true
-    latex_engine: xelatex
-    pandoc_args:
-      - "--lua-filter=../assets/strip-emoji.lua"
-# ---
-title: "Chapter 5"
-subtitle: "Help!"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  html_document: # To create an HTML document from R Markdown
-    toc: false # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
 ```
 
 
@@ -197,7 +153,7 @@ The "outline pane" in RStudio uses your Markdown headings to create a clickable 
 
 ---
 
-![Figure 1. Screenshot of R markdown formating](Memo_Example_heading.png)
+![Figure 1. Screenshot of R markdown formating](/assets/images/ch05-help/Memo_Example_heading.png)
 
 ---
 
@@ -281,7 +237,7 @@ In the Source pane, click the **Knit button** (it looks like a ball of yarn with
 
 ---
 
-![Figure 2. Screenshot of knit button](Memo_Example_knithtml3.png)
+![Figure 2. Screenshot of knit button](/assets/images/ch05-help/Memo_Example_knithtml3.png)
 
 ---
 
@@ -293,7 +249,7 @@ In the Source pane, click the the **Preview menu** drop down button and select K
 
 ---
 
-![Figure 3. Screenshot of Preview button](Memo_Example_knithtml.png)
+![Figure 3. Screenshot of Preview button](/assets/images/ch05-help/Memo_Example_knithtml.png)
 
 ---
 
@@ -303,7 +259,7 @@ Below is the result you get after knitting to HTML
 
 ---
 
-![Figure 4. Screenshot of resulting HTML report](Memo_Example_knithtml2.png)
+![Figure 4. Screenshot of resulting HTML report](/assets/images/ch05-help/Memo_Example_knithtml2.png)
 
 ---
 
