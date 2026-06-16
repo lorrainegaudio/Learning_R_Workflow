@@ -1,0 +1,28 @@
+---
+title: "Goal, Code, Verify, Reflect"
+subtitle: "Guided Activities for Learning R Workflow"
+author: "by Lorraine Gaudio"
+date: "Version `r today`"
+---
+
+# Welcome
+
+Brief welcome to the guided activity book.
+
+# What this book is
+
+This book contains the guided activity materials for learning R workflow.
+
+# How to use this book
+
+Open a chapter, work in RStudio, type the code, read the explanations, and use the activity to prepare for the Canvas Practice Space.
+
+# What this book is not
+
+This is not where students submit work. Canvas remains the place for Practice Space submissions, quizzes, and file uploads.
+
+# Start here
+
+[Read the Preface](front-matter/preface.qmd)
+
+[Begin Core Module 1: Tenacity](Core Module 1 Tenacity/...)

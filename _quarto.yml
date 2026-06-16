@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Introduction to R Programming Guided Activities"
+  author: "Lorraine Gaudio"
+  search: true
+  chapters:
+    - index.qmd
+
+    - part: "Core Module 1: Tenacity"
+      chapters:
+        - "Core Module 1 Tenacity/@Preface.Rmd"
+        - "Core Module 1 Tenacity/PUT-EXACT-CHAPTER-1-FILENAME-HERE.Rmd"
+        - "Core Module 1 Tenacity/PUT-EXACT-CHAPTER-2-FILENAME-HERE.Rmd"
+
+format:
+  html:
+    theme: cosmo
+    css: styles/guided-book.css
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  freeze: auto

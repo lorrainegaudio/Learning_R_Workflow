@@ -93,7 +93,7 @@ b. **macOS**: Click "Download R for macOS" if you are using a Mac. You will down
 
 c. **Linux**: Click the [Linux folder of the Cran website](https://cran.r-project.org/bin/linux/){target="_blank" rel="noopener noreferrer"} link and follow your distribution’s installation instructions.
 
-![Figure 1. The basic R console (RGui) on Windows.](r_console.png)
+![Figure 1. The basic R console (RGui) on Windows.](/assets/images/preface/r_console.png)
 
 If you double-click the R icon after installation, you may see a window like this, called the R console (or RGui on Windows). This is the base interface that comes with R, and it can run R code, but we will not use it in this course. Instead, you will always write, run, and save your work in **RStudio Desktop**, which provides a script editor, projects, and tools that make your analyses easier to organize, share, and reproduce.
 
@@ -112,7 +112,7 @@ c. **Linux**: Select the installer that matches your Linux distribution (for exa
 3. After installation, open **RStudio Desktop**. It should automatically detect the version of R you already installed. If RStudio does not start or cannot find R, reinstall R and then reopen RStudio.
 
 
-![Figure 2. The RStudio icon on Windows.](RStudio_Logo.png)
+![Figure 2. The RStudio icon on Windows.](/assets/images/preface/RStudio_Logo.png)
 
 ## Intallation Video Tutorials
 
