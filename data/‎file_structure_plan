@@ -1,0 +1,152 @@
+Learning_R_Workflow/
+├── .gitignore
+├── _quarto.yml     # Quarto book design setting
+├── index.qmd       # book home page / orientation.
+├── Learning_R_Workflow.Rproj
+├── data/           # not tracked by github files
+├── assets/
+│   ├── images/
+│   │  ├── preface/
+│   │      ├── r_console.png
+│   │      └── RStudio_Logo.png
+│   │  ├── ch01-navigation/
+│   │      ├── Quiz_Question.png
+│   │      ├── clear_environment.png
+│   │      ├── environment.png
+│   │      ├── environment_print.png
+│   │      ├── Quiz_Question.png
+│   │      ├── r_studio.png
+│   │      ├── r_studio_console.png
+│   │      ├── RStudio_roundlogo.png
+│   │      ├── save_RData.png
+│   │      ├── setwd_UI_files.png
+│   │      └── setwd_UI_session.png
+│   │  ├── ch02-scripts/
+│   │      ├── new_rscript.png
+│   │      ├── run_script.png
+│   │      ├── run_script2.png
+│   │      ├── run_source.png
+│   │      └── save_icon.png
+│   │  ├── ch03-vector/
+│   │      ├── Code_chunk.png
+│   │      ├── run_menu.png
+│   │      ├── play_button.png
+│   │      ├── Memo_Example.png
+│   │      ├── Memo_Example2.png
+│   │      ├── Memo_Example3.png
+│   │      └── Memo_Example4.png
+│   │  ├── ch05-help/
+│   │      ├── Memo_Example_heading.png
+│   │      ├── Memo_Example_knithtml3.png
+│   │      ├── Memo_Example_knithtml.png
+│   │      ├── Memo_Example_knithtml2.png
+│   │      └── missing_back_tick_error.png
+│   │  └── ch07-importing/
+│   │      ├── getwd_in_console.png
+│   │      └── Packages.png
+│   │  └── ch09-github/
+│   │      ├── Tools_Global Options.png
+│   │      ├── Tools_Global Options_VersionControl.png
+│   │      ├── check_for_git.png
+│   │      ├── git_not_installed_error.png
+│   │      ├── git_identity.png
+│   │      └── Folder_Structure.png
+│   │  └── ch10-andor/
+│   │      ├── And.png
+│   │      └── Or.png
+│   │  └── activities
+│   │      └── source_empty_file.png
+├── styles/
+│   ├── guided-book.css
+│   └── legacy-rmarkdown.css
+├── pdf/
+│   ├── header.tex
+│   └── strip-emoji.lua
+├── legacy-html/
+│   ├── header.html
+│   └── footer.html  
+├── front-matter/
+│   ├── 👋Preface.html
+│   ├── 👋Preface.Rmd
+│   └── preface.qmd
+├── chapters/
+│   ├── tenacity/
+│   │   ├── ch01-navigation.Rmd
+│   │   └── ch02-scripts.Rmd
+│   ├── transparency/
+│   │   ├── ch03-vectors.Rmd
+│   │   └── ch04-structures.Rmd
+│   ├── courage/
+│   │   ├── ch05-help-prompting.Rmd
+│   │   ├── ch05-help.Rmd
+│   │   ├── ch05-missing-backtick-example.Rmd
+│   │   ├── ch05-practice-space.Rmd
+│   │   ├── ch06-practice-space.RData
+│   │   ├── ch06-practice-space.Rmd
+│   │   └── ch06-missing-values.Rmd
+│   ├── autonomy/
+│   │   ├── car_prices.xlsx
+│   │   ├── ch07-importing-data.Rmd
+│   │   ├── ch08-indexing.Rmd
+│   │   ├── chapter7_practice.RData
+│   │   ├── chapter8_practice.RData
+│   │   ├── field_sightings.csv
+│   │   └── Values_Transport_dplace.csv
+│   ├── openmindedness/
+│   │   ├── ch09-github.Rmd
+│   │   ├── ch10-and-or-in.Rmd
+│   │   └── ch11-dplyr-subsetting.Rmd
+│   ├── curiosity/
+│   │   ├── ch12️-recoding.Rmd
+│   │   ├── ch13-grouped-summaries.Rmd
+│   │   └── ch14-PENDING
+│   ├── thoroughness/
+│   │   ├── ch15-probability-functions.Rmd
+│   │   └── ch16-ggplot2.Rmd
+├── activities
+│   ├── ai-appropriateness/
+│   │   ├── Is AI Appropriate Group Discussion.Rmd
+│   │   ├── AI-Appropriateness Quest.html  # This is an interactive game vibe coded with an LLM
+│   ├── vector-madlib/
+│   │   ├── vector-madlib-student-template.Rmd
+│   │   └── vector-madlib.Rmd
+│   ├── courage-lab/
+│   │   ├── courage-lab.Rmd
+│   ├── data-understanding-notebook
+│   │   ├── Descriptive Statistics.Rmd
+│   │   ├── field_sightings_dictionary.csv
+│   │   ├── field_sightings_expanded.csv 
+│   │   └── source_empty_file.png
+│   ├── midterm-review/
+│   │   └── Term_in_Context_Review_Quest.html # This is an interactive game vibe coded with an LLM
+│   ├── wildfire/
+│   │   ├── Fire Assignment Part A.Rmd
+│   │   ├── Fire Assignment Part B.Rmd
+│   │   ├── Fire Assignment Part C.Rmd
+│   │   ├── param_tbl_from_quantiles.csv
+│   │   ├── Table1_WHP_bins_parameters.csv
+│   │   ├── whp_id.tif
+│   │   ├── whp_idaho_area_by_decile.csv
+│   │   ├── whp_idaho_basic_stats.csv
+│   │   ├── whp_idaho_county_mean.csv
+│   │   ├── whp_idaho_metadata.csv
+│   │   ├── whp_idaho_missing_area.csv
+│   │   ├── whp_idaho_quantiles.csv
+│   │   └── whp_raw_sample.csv
+│   ├── Advanced Module 8 Lost Chapters/
+│   │   ├── ch05-example.Rmd
+│   │   ├── hack-a-promptChapter 5 Leftovers.qmd
+│   │   ├── Chapter 12 Misc.Rmd
+│   │   ├── Descriptive Statistics - Signature Assignment 2 - Part 4.Rmd
+│   │   ├── Chapter 14_A.Rmd
+│   │   ├── Chapter 14_B.Rmd
+│   │   ├── Reproducible_Workflow_1.Rmd
+│   │   ├── Reproducible_Workflow_2.Rmd
+│   │   └── Version Control Diagram.md
+
+
+├── Course Resources/
+│   ├── Glossary.Rmd
+│   ├── Glossary.html
+│   ├── Instructor_Guide_Master.qmd
+│   └── Instructor_Guide_Master.html

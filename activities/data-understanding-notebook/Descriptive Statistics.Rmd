@@ -69,7 +69,7 @@ In the **Source** editor, you can see the Quarto formatting symbols you are lear
 
 6. Select **Create Empty Document** to start with a blank slate.
 
-![New Quarto Document Form](source_empty_file.png)
+![New Quarto Document Form](/assets/images/activities/source_empty_file.png)
 
 ### **Step 2**
 
