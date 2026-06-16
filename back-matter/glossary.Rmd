@@ -9,7 +9,6 @@ team: "Fall 2026"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 # A
 
 **Accountability**: Taking responsibility for the results you report by verifying them, responding to questions or critiques, and correcting errors when found. In practice, this means you keep a clear record (e.g., in an R Markdown/Notebook or script) that shows how you checked your work and why you made your choices.

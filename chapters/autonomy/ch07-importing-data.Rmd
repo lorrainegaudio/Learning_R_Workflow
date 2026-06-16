@@ -582,7 +582,7 @@ Because we are using an R Notebook, you will use a simple file path because your
 
 🎯 Import the CSV file `Values_Transport_dplace.csv` into R using `read_csv()` and store it as `dplace_df`. **This is Task 6 of the Practice Space at the end of this chapter.**
 
-```{r message=TRUE, warning=TRUE}
+```{r eval=FALSE}
 # ⚡ Type this in your R Notebook to import the CSV file
 dplace_df <- read_csv("Values_Transport_dplace.csv")
 ```
@@ -634,7 +634,7 @@ Saving the data file in the exact same folder as your R Notebook allows you to u
 
 🎯 Import the Excel file `car_prices.xlsx` to R using `read_excel()` and store it as `car_prices_df`. **This is Task 7 of the Practice Space at the end of this chapter.**
 
-```{r message=TRUE, warning=TRUE}
+```{r eval=FALSE}
 # ⚡ Type this in your R Notebook to import the Excel file
 car_prices_df <- read_excel("car_prices.xlsx")
 ```
@@ -657,7 +657,7 @@ View the data frame by clicking on `car_prices_df` in your Environment pane or b
 
 Excel files can contain multiple sheets. By default, `read_excel()` reads the first sheet. If your Excel file has multiple sheets, you can specify which sheet to read using the `sheet` argument. You can specify the sheet by name or by number.
 
-```{r}
+```{r eval=FALSE}
 # Optional Example
 excel_sheets("car_prices.xlsx")
 car_prices_sheet1 <- read_excel("car_prices.xlsx", sheet = 1)
@@ -677,7 +677,7 @@ This task creates an RData file.
 
 Run this code after `car_prices_df`, `dplace_df`, `movielens`, and `mtcars` exist in your Environment
 
-```{r}
+```{r eval=FALSE}
 # ⚡ Type this in your R Notebook to save the environment objects into an RData file
 save(
   car_prices_df,

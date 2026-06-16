@@ -1,6 +1,9 @@
 project:
   type: book
   output-dir: docs
+  execute-dir: project
+  resources:
+  - "data/wildfire/whp_raw_sample.csv"
 
 book:
   title: "Introduction to R Programming Guided Activities"
@@ -8,12 +11,14 @@ book:
   search: true
   chapters:
     - index.qmd
-
-    - part: "Core Module 1: Tenacity"
+    - front-matter/preface.qmd
       chapters:
         - "Core Module 1 Tenacity/@Preface.Rmd"
         - "Core Module 1 Tenacity/PUT-EXACT-CHAPTER-1-FILENAME-HERE.Rmd"
         - "Core Module 1 Tenacity/PUT-EXACT-CHAPTER-2-FILENAME-HERE.Rmd"
+        
+  appendices:
+    - back-matter/glossary.Rmd
 
 format:
   html:

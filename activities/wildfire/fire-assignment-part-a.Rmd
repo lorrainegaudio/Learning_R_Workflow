@@ -3,76 +3,11 @@ title: "Wildfire Signature Assignment"
 subtitle: "Part A: Data Exploration and Wrangling"
 author: "Lorraine Gaudio"
 date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  bookdown::html_document2: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    code_folding: show # Enables you to include R code but have it hidden by default. (Show hide button)
-    includes:
-      in_header: ../../assets/header.html
-      after_body: ../../assets/footer.html
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r eval=FALSE, include=FALSE}
-title: "Wildfire Signature Assignment"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output: 
-   bookdown::pdf_document2:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    citation_package: natbib
-    fig_caption: true
-    df_print: kable # Data frame printing
-    includes:
-      in_header: ../assets/header.tex
-    latex_engine: xelatex  # Use xelatex to support fontspec
-fontsize: 12pt
-geometry: margin=1in
-mainfont: "Garamond" # Sets the font of the entire document
-sansfont: "Gotham-Book.otf" # Set sans-serif font to Gotham Book
-monofont: "Courier New" # Set monospace font to Courier New
-documentclass: scrreprt
-linkcolor: boisestateblue # Customizes the color of hyperlinks
-urlcolor: magenta # Customizes the color of URLs
-citecolor: black # Customizes the color of citations
-bibliography: references.bib # Bibliography file
-biblio-style: apalike                 # ⟵ natbib needs a .bst style
-natbiboptions: "round,authoryear"     # round brackets, Author (Year)
- 
-Or
-title: "Wildfire Signature Assignment"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  bookdown::html_document2: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    code_folding: show # Enables you to include R code but have it hidden by default. (Show hide button)
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
 ```
 
 # Overview
@@ -101,21 +36,25 @@ By the end of this Wildfire Signature Assignment you will be able to:
 
 # Setting Up Your Notes
 
-To begin Wildfire guided activity, follow these steps:
+To begin the Wildfire guided activity, follow these steps:
 
-1. Open your course project for RStudio 
+1. Open your course project in RStudio.
 
-For those of you who **have GitHub** and a course project, navigate to your course folder and open your course project. This will open RStudio. Click "Pull" in the Git pane to get the latest version of the course materials. After completing work, save, stage, commit, and push.
+   If you **have GitHub** and a course project, open your course project in RStudio. Click **Pull** in the Git pane to get the latest version of the course materials. After completing your work, save, stage, commit, and push.
 
-If you **don't have GitHub** or a course project, just open RStudio and set your working directory to your course folder.
+   If you **do not have GitHub** or a course project, open RStudio and set your working directory to your course folder.
 
-2. Download `Fire-Assignment-PartA-StudentCopy.qmd` and save it in your course folder. 
+2. Download `Fire-Assignment-PartA-StudentCopy.qmd` and save it in your course folder.
 
-3. Download `whp_raw_sample.csv` and save it in your course folder next to `Fire-Assignment-PartA-StudentCopy.qmd`.
+3. Download the data file: <a href="/data/wildfire/whp_raw_sample.csv" download>whp_raw_sample.csv</a>
 
-4. Edit the YAML to show your name. 
+   Save `whp_raw_sample.csv` in the same course folder as `Fire-Assignment-PartA-StudentCopy.qmd`.
 
-5. Follow along
+4. Open `Fire-Assignment-PartA-StudentCopy.qmd` in RStudio.
+
+5. Edit the YAML to show your name.
+
+6. Follow along with the guided activity.
 
 Read the background material below, then complete the tasks that follow. Replace each ____ placeholder (and any TODO comments) with working code or a short written answer. Run each section; be sure the requested objects appear in the Environment. 
 
@@ -159,7 +98,8 @@ Dillon, Gregory K.; Gilbertson-Day, Julie W. 2020. Wildfire Hazard Potential for
 
 Idaho subset (whp_id.tif) prepared and provided by Matt Williamson, SPASES Lab, Boise State University.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'hide', fig.cap='Idaho Wildfire Hazard Potential (WHP), continuous index (unitless) from the USFS WHP v2020 raster, clipped to the Idaho boundary. Colors use a viridis gradient (dark purple = lower WHP; yellow = higher WHP); values span approximately 0–64,186. Raster resolution is 240 m in an Albers Equal Area projection; NoData cells are transparent. Red outline shows the TIGER/Line state boundary reprojected to the raster CRS. Idaho subset prepared by Matt Williamson (SPASES Lab, Boise State University); original dataset: Dillon & Gilbertson-Day (2020), USFS Research Data Archive (DOI: 10.2737/RDS-2015-0047-3).'}
+```{r}
+#| include: false
 ## **First Install R Packages: 'terra', 'tidyterra', 'tigris'
 library(terra)
 library(tidyverse)
@@ -169,11 +109,26 @@ library(tigris)
 
 terraOptions(progress = 0)           # terra: no text progress
 options(tigris_use_cache = TRUE)     # tigris: avoid re-download chatter
+```
 
+```{r setup-paths, include=FALSE}
+wildfire_dir <- file.path("data", "wildfire")
 
-whp_idaho <- rast("whp_id.tif") 
+whp_path <- file.path(wildfire_dir, "whp_id.tif")
 
+if (!file.exists(whp_path)) {
+  stop(
+    "Cannot find wildfire raster file:\n",
+    whp_path,
+    "\n\nCurrent working directory is:\n",
+    getwd()
+  )
+}
 
+whp_idaho <- terra::rast(whp_path)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'hide', fig.cap='Idaho Wildfire Hazard Potential (WHP), continuous index (unitless) from the USFS WHP v2020 raster, clipped to the Idaho boundary. Colors use a viridis gradient (dark purple = lower WHP; yellow = higher WHP); values span approximately 0–64,186. Raster resolution is 240 m in an Albers Equal Area projection; NoData cells are transparent. Red outline shows the TIGER/Line state boundary reprojected to the raster CRS. Idaho subset prepared by Matt Williamson (SPASES Lab, Boise State University); original dataset: Dillon & Gilbertson-Day (2020), USFS Research Data Archive (DOI: 10.2737/RDS-2015-0047-3).'}
 state_bounds <- states() %>% ## download state cartographic boundaries form the TIGER shapefiles
   filter(STUSPS %in% c("ID")) %>% ##filter for the ID state boundary
   st_transform(., crs = crs(whp_idaho)) ## reproject to the raster projection
@@ -271,90 +226,6 @@ decile_table <- area_by_decile |>
   arrange(decile)
 
 ```
-
-
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-# 4) AREA WITH MISSING DATA (if any) -----------------------------------------
-na_area_km2 <- {
-  na_r <- terra::ifel(is.na(whp), area_km2_rast, NA)
-  as.numeric(terra::global(na_r, "sum", na.rm = TRUE)[1,1])
-}
-na_tbl <- tibble(area_km2 = na_area_km2,
-                 area_acres = na_area_km2 * 247.105381)
-
-# 5) OPTIONAL: COUNTY-LEVEL MEANS (Idaho) ------------------------------------
-id_counties <- tigris::counties(state = "ID", cb = TRUE) |>
-  sf::st_transform(crs = terra::crs(whp))
-county_v <- terra::vect(id_counties)
-
-county_mean <- terra::extract(whp, county_v, fun = mean, na.rm = TRUE) |>
-  as_tibble() |>
-  bind_cols(sf::st_drop_geometry(id_counties) |> select(COUNTYFP, NAME)) |>
-  rename(mean_whp = 2, county_fips = COUNTYFP, county = NAME) |>
-  arrange(desc(mean_whp))
-
-# 6) WRITE TABLES -------------------------------------------------------------
-readr::write_csv(meta_tbl,      "whp_idaho_metadata.csv")
-readr::write_csv(basic_stats,   "whp_idaho_basic_stats.csv")
-readr::write_csv(quant_tbl,     "whp_idaho_quantiles.csv")
-readr::write_csv(decile_table,  "whp_idaho_area_by_decile.csv")
-readr::write_csv(county_mean,   "whp_idaho_county_mean.csv")
-readr::write_csv(na_tbl,        "whp_idaho_missing_area.csv")
-
-
-library(terra)
-library(sf)
-library(tigris)
-library(dplyr)
-library(readr)
-
-# --- 1) Sample raw WHP values (random, non-NA) -------------------------------
-set.seed(2025)
-N <- 150000
-
-samp_pts <- terra::spatSample(
-  whp_idaho,
-  size      = N,
-  method    = "random",
-  na.rm     = TRUE,
-  as.points = TRUE,
-  values    = TRUE      # attaches WHP_ID attribute to the points
-)
-
-# --- 2) Add county attributes to each sampled point --------------------------
-id_counties <- tigris::counties(state = "ID", cb = TRUE) |>
-  sf::st_transform(crs = terra::crs(whp_idaho))
-
-# spatial join (point -> county); keep only county name & FIPS
-pts_sf   <- sf::st_as_sf(samp_pts)
-pts_join <- sf::st_join(
-  pts_sf,
-  id_counties[, c("NAME","COUNTYFP")],
-  left     = TRUE,
-  largest  = TRUE
-)
-
-# --- 3) Optional: add per-cell area (km^2) as a weight -----------------------
-# (Equal-area CRS + uniform cell size => constant ~0.0576 km^2, but we compute it explicitly)
-area_km2_rast <- terra::cellSize(whp_idaho, unit = "km")
-cell_area_km2 <- terra::extract(area_km2_rast, samp_pts, ID = FALSE)[,1]
-
-# --- 4) Build the RAW tibble (no bins, no summaries) -------------------------
-whp_raw_labeled <- pts_join |>
-  sf::st_drop_geometry() |>
-  transmute(
-    whp          = WHP_ID,          # unitless WHP index
-    county       = NAME,            # county name
-    county_fips  = COUNTYFP,        # 3-digit county FIPS (Idaho state code = 16)
-    cell_area_km2 = cell_area_km2   # area weight per row (useful for probabilities)
-  )
-
-# Save for students (raw data only)
-write_csv(whp_raw_labeled, "whp_raw_sample.csv")
-
-head(whp_raw_labeled)
-```
-
 
 # Part A
 

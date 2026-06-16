@@ -119,10 +119,13 @@ list.files()
 
 🎯  Load `field_sightings.csv` into R using `read_csv()` and assign it to a variable called `field_sightings`. Recall that you need to library `readr` before you can use `read_csv()`.
 
-```{r message=TRUE, warning=TRUE}
+```{r eval=FALSE}
 # ⚡ Type this in your R Notebook
 library(readr) # Load the readr package for reading CSV files
 field_sightings <- read_csv("field_sightings.csv")
+```
+```{r include=FALSE}
+field_sightings <- read_csv("/data/autonomy/field_sightings.csv")
 ```
 
 🗣 This code uses the `read_csv()` function to read the CSV file named "field_sightings.csv" and assigns the resulting data frame to a variable called `field_sightings`. It it normal to see messages with you load packages.

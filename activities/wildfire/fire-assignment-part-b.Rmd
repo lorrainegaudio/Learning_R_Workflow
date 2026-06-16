@@ -3,76 +3,11 @@ title: "Wildfire Signature Assignment"
 subtitle: "Part B: Lognormal tail probabilities"
 author: "Lorraine Gaudio"
 date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  bookdown::html_document2: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    code_folding: show # Enables you to include R code but have it hidden by default. (Show hide button)
-    includes:
-      in_header: ../../assets/header.html
-      after_body: ../../assets/footer.html
+team: "Fall 2026"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r eval=FALSE, include=FALSE}
-title: "Wildfire Signature Assignment"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-output: 
-   bookdown::pdf_document2:
-    toc: true
-    toc_depth: 2
-    number_sections: true
-    citation_package: natbib
-    fig_caption: true
-    df_print: kable # Data frame printing
-    includes:
-      in_header: ../assets/header.tex
-    latex_engine: xelatex  # Use xelatex to support fontspec
-fontsize: 12pt
-geometry: margin=1in
-mainfont: "Garamond" # Sets the font of the entire document
-sansfont: "Gotham-Book.otf" # Set sans-serif font to Gotham Book
-monofont: "Courier New" # Set monospace font to Courier New
-documentclass: scrreprt
-linkcolor: boisestateblue # Customizes the color of hyperlinks
-urlcolor: magenta # Customizes the color of URLs
-citecolor: black # Customizes the color of citations
-bibliography: references.bib # Bibliography file
-biblio-style: apalike                 # ⟵ natbib needs a .bst style
-natbiboptions: "round,authoryear"     # round brackets, Author (Year)
- 
-Or
-title: "Wildfire Signature Assignment"
-author: "Lorraine Gaudio"
-date:   "`r paste('Version', format(Sys.Date(), '%B %d, %Y'))`"
-team: "Spring 2026"
-output: 
-  bookdown::html_document2: # To create an HTML document from R Markdown
-    toc: true # Table of contents (TOC)
-    toc_depth: 1 #(meaning that level 1, 2, and 3 headers will be included in the table of contents
-    toc_float: # Float the table of contents to the left of the main document
-      collapsed: false # Collapsed (defaults to TRUE) controls whether the TOC appears with only the top-level
-      smooth_scroll: true # controls whether page scrolls are animated when TOC items are navigated to via mouse clicks.
-    number_sections: true # Numbering starts with "#" (H1). Without H1 headers, the H2 headers ("##") will be numbered with 0.1, 0.2, and so on.
-    css: ../assets/styles.css # This is the name of the CSS file to style the HTML document with Boise State Brand. The CSS file must be in the same directory as the R Markdown file.
-    fig_caption: true #Whether figures are rendered with captions.
-    df_print: paged # Printing data frames with interactivne scrolling
-    code_folding: show # Enables you to include R code but have it hidden by default. (Show hide button)
-    includes:
-      in_header: ../assets/header.html
-      after_body: ../assets/footer.html
 ```
 
 # Overview
@@ -151,11 +86,25 @@ Use the template 🎯 Goal → ⚡ Code → ✅ Checks → 🗣 Comment to met t
 
 The table below summarizes seven wildfire hazard categories, from **Very Low** to **Ultra (Top 1%)**, along with the probability and spread-distance values used in this assignment. The **Probability** column gives the statewide area share for each category and is interpreted here as the chance that a randomly located ignition falls in that category.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, tab.cap='Table 1. Quantile-based WHP categories for Idaho and 8-hour spread distance parameters. Probability = statewide area share (% of valid raster area); distances in kilometers; WHP is unitless.'}
-library(terra); library(dplyr); library(readr); library(knitr); library(kableExtra)
+```{r setup-wildfire, include=FALSE}
+library(terra)
+library(dplyr)
+library(readr)
+library(knitr)
+library(kableExtra)
 
-# Alias for clarity
-whp <- whp_idaho
+wildfire_dir <- file.path("data", "wildfire")
+whp_path <- file.path(wildfire_dir, "whp_id.tif")
+
+if (!file.exists(whp_path)) {
+  stop("Cannot find: ", whp_path, "\nWorking directory: ", getwd())
+}
+
+whp <- terra::rast(whp_path)
+
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, tab.cap='Table 1. Quantile-based WHP categories for Idaho and 8-hour spread distance parameters. Probability = statewide area share (% of valid raster area); distances in kilometers; WHP is unitless.'}
 
 # whp is your SpatRaster (continuous WHP for Idaho)
 probs <- c(0, .25, .50, .75, .90, .95, .99, 1.00)
