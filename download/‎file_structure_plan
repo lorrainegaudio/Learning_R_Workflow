@@ -1,148 +1,169 @@
 Learning_R_Workflow/
-├── _quarto.yml     # Quarto book design setting
-├── index.qmd       # book home page / orientation
+├── _quarto.yml
+├── index.qmd
 ├── Learning_R_Workflow.Rproj
 ├── .gitignore
 │
 ├── front-matter/
-│   └── preface.qmd
+│   ├── preface.qmd
+│   └── images/
+│       ├── r_console.png
+│       └── RStudio_Logo.png
 │
 ├── chapters/
-│   ├── tenacity/
+│   ├── 01-tenacity/
 │   │   ├── ch01-navigation.Rmd
-│   │   └── ch02-scripts.Rmd
+│   │   ├── ch02-scripts.Rmd
+│   │   └── images/
+│   │       ├── ch01-navigation/
+│   │       │   ├── Quiz_Question.png
+│   │       │   ├── clear_environment.png
+│   │       │   ├── environment.png
+│   │       │   ├── environment_print.png
+│   │       │   ├── r_studio.png
+│   │       │   ├── r_studio_console.png
+│   │       │   ├── RStudio_roundlogo.png
+│   │       │   ├── save_RData.png
+│   │       │   ├── setwd_UI_files.png
+│   │       │   └── setwd_UI_session.png
+│   │       └── ch02-scripts/
+│   │           ├── new_rscript.png
+│   │           ├── run_script.png
+│   │           ├── run_script2.png
+│   │           ├── run_source.png
+│   │           └── save_icon.png
+│   │
 │   ├── transparency/
 │   │   ├── ch03-vectors.Rmd
-│   │   └── ch04-structures.Rmd
+│   │   ├── ch04-structures.Rmd
+│   │   └── images/
+│   │       └── ch03-vectors/
+│   │           ├── Code_chunk.png
+│   │           ├── run_menu.png
+│   │           ├── play_button.png
+│   │           ├── Memo_Example.png
+│   │           ├── Memo_Example2.png
+│   │           ├── Memo_Example3.png
+│   │           └── Memo_Example4.png
+│   │
 │   ├── courage/
 │   │   ├── ch05-help.Rmd
 │   │   ├── ch05-help-prompting.Rmd
-│   │   └── ch06-missing-values.Rmd
+│   │   ├── ch06-missing-values.Rmd
+│   │   ├── images/
+│   │   │   └── ch05-help/
+│   │   │       ├── Memo_Example_heading.png
+│   │   │       ├── Memo_Example_knithtml.png
+│   │   │       ├── Memo_Example_knithtml2.png
+│   │   │       ├── Memo_Example_knithtml3.png
+│   │   │       └── missing_back_tick_error.png
+│   │   └── downloads/
+│   │       └── ch05-help/
+│   │           ├── ch05-missing-backtick-example.Rmd
+│   │           ├── ch05-practice-space.Rmd
+│   │           └── ch05-practice-space.RData
+│   │
 │   ├── autonomy/
 │   │   ├── ch07-importing-data.Rmd
-│   │   └── ch08-indexing.Rmd
+│   │   ├── ch08-indexing.Rmd
+│   │   ├── images/
+│   │   │   └── ch07-importing-data/
+│   │   │       ├── getwd_in_console.png
+│   │   │       └── Packages.png
+│   │   └── data/
+│   │       └── ch07-importing-data/
+│   │           ├── car_prices.xlsx
+│   │           ├── field_sightings.csv
+│   │           └── Values_Transport_dplace.csv
+│   │
 │   ├── openmindedness/
 │   │   ├── ch09-github.Rmd
 │   │   ├── ch10-and-or-in.Rmd
-│   │   └── ch11-dplyr-subsetting.Rmd
+│   │   ├── ch11-dplyr-subsetting.Rmd
+│   │   ├── images/
+│   │   │   ├── ch09-github/
+│   │   │   │   ├── Tools_Global Options.png
+│   │   │   │   ├── Tools_Global Options_VersionControl.png
+│   │   │   │   ├── check_for_git.png
+│   │   │   │   ├── git_not_installed_error.png
+│   │   │   │   ├── git_identity.png
+│   │   │   │   └── Folder_Structure.png
+│   │   │   └── ch10-and-or-in/
+│   │   │       ├── And.png
+│   │   │       └── Or.png
+│   │   └── dev-notes/
+│   │       └── version-control-diagram-prompt.md
+│   │
 │   ├── curiosity/
-│   │   ├── ch12️-recoding.Rmd
+│   │   ├── ch12-recoding.Rmd
 │   │   ├── ch13-grouped-summaries.Rmd
-│   │   └── ch14-PENDING
+│   │   ├── ch14-chaining-PENDING.Rmd
+│   │   └── ch17-string-detect-boundaries-PENDING.Rmd
+│   │
 │   └── thoroughness/
 │       ├── ch15-probability-functions.Rmd
 │       └── ch16-ggplot2.Rmd
 │
-├── back-matter/
-│   └── glossary.Rmd
-│
 ├── activities/
 │   ├── ai-appropriateness/
 │   │   ├── is-ai-appropriate-discussion.Rmd
-│   │   ├── ai-appropriateness-quest.html  # This is an interactive game vibe coded with an LLM
+│   │   └── ai-appropriateness-quest.html
+│   │
 │   ├── vector-madlib/
-│   │   ├── vector-madlib-student-template.Rmd
-│   │   └── vector-madlib.Rmd
+│   │   ├── vector-madlib.Rmd
+│   │   └── downloads/
+│   │       └── vector-madlib-student-template.Rmd
+│   │
 │   ├── courage-lab/
-│   │   ├── courage-lab.Rmd
+│   │   └── courage-lab.Rmd
+│   │
 │   ├── data-understanding-notebook/
-│   │   └── descriptive-statistics.Rmd
+│   │   ├── descriptive-statistics.Rmd
+│   │   └── data/
+│   │       ├── field_sightings_dictionary.csv
+│   │       └── field_sightings_expanded.csv
+│   │
 │   ├── midterm-review/
-│   │   └── term-in-context-review-quest.html # This is an interactive game vibe coded with an LLM
+│   │   └── term-in-context-review-quest.html
+│   │
 │   └── wildfire/
 │       ├── fire-assignment-part-a.Rmd
 │       ├── fire-assignment-part-b.Rmd
-│       └── fire-assignment-part-c.Rmd
+│       ├── fire-assignment-part-c.Rmd
+│       ├── data/
+│       │   └── whp_id.tif
+│       └── downloads/
+│           └── whp_raw_sample.csv
 │
-├── download/                    # files that students may download OR files that rendered chapters/activities read
-│   ├── file_structure_plan  # type "File" 
-│   ├── autonomy/
-│   │   ├── car_prices.xlsx
-│   │   ├── field_sightings.csv
-│   │   └── Values_Transport_dplace.csv
-│   ├── data-understanding-notebook/
-│   │   ├── field_sightings_dictionary.csv
-│   │   └── field_sightings_expanded.csv 
-│   ├── wildfire/
-│   │   ├── whp_raw_sample.csv
-│   │   └── whp_id.tif
-│   └── courage/
-│       ├── ch05-missing-backtick-example.Rmd
-│       ├── ch05-practice-space.Rmd
-│       └── ch05-practice-space.RData
+├── back-matter/
+│   └── glossary.Rmd
 │
 ├── assets/
-│   ├── images/
-│   │  ├── preface/
-│   │  │   ├── r_console.png
-│   │  │   └── RStudio_Logo.png
-│   │  ├── ch01-navigation/
-│   │  │   ├── Quiz_Question.png
-│   │  │   ├── clear_environment.png
-│   │  │   ├── environment.png
-│   │  │   ├── environment_print.png
-│   │  │   ├── Quiz_Question.png
-│   │  │   ├── r_studio.png
-│   │  │   ├── r_studio_console.png
-│   │  │   ├── RStudio_roundlogo.png
-│   │  │   ├── save_RData.png
-│   │  │   ├── setwd_UI_files.png
-│   │  │   └── setwd_UI_session.png
-│   │  ├── ch02-scripts/
-│   │  │   ├── new_rscript.png
-│   │  │   ├── run_script.png
-│   │  │   ├── run_script2.png
-│   │  │   ├── run_source.png
-│   │  │   └── save_icon.png
-│   │  ├── ch03-vector/
-│   │  │   ├── Code_chunk.png
-│   │  │   ├── run_menu.png
-│   │  │   ├── play_button.png
-│   │  │   ├── Memo_Example.png
-│   │  │   ├── Memo_Example2.png
-│   │  │   ├── Memo_Example3.png
-│   │  │   └── Memo_Example4.png
-│   │  ├── ch05-help/
-│   │  │   ├── Memo_Example_heading.png
-│   │  │   ├── Memo_Example_knithtml3.png
-│   │  │   ├── Memo_Example_knithtml.png
-│   │  │   ├── Memo_Example_knithtml2.png
-│   │  │   └── missing_back_tick_error.png
-│   │  ├── ch07-importing/
-│   │  │   ├── getwd_in_console.png
-│   │  │   └── Packages.png
-│   │  ├── ch09-github/
-│   │  │   ├── Tools_Global Options.png
-│   │  │   ├── Tools_Global Options_VersionControl.png
-│   │  │   ├── check_for_git.png
-│   │  │   ├── git_not_installed_error.png
-│   │  │   ├── git_identity.png
-│   │  │   └── Folder_Structure.png
-│   │  ├── ch10-andor/
-│   │  │   ├── And.png
-│   │  │   └── Or.png
-│   ├── activities
-│   │   └── source_empty_file.png
 │   ├── styles/
 │   │   ├── guided-book.css
 │   │   └── legacy-rmarkdown.css
 │   ├── pdf/
 │   │   ├── header.tex
 │   │   └── strip-emoji.lua
-│       └── legacy-html/
-│          ├── header.html
-│          └── footer.html  
+│   └── legacy-html/
+│       ├── header.html
+│       └── footer.html
 │
 ├── dev-notes/
 │   └── instructor-guide-master.qmd
 │
 └── _archive/
-    ├── ch05-example.Rmd
-    ├── hack-a-promptChapter 5 Leftovers.qmd
-    ├── Chapter 12 Misc.Rmd
-    ├── Descriptive Statistics - Signature Assignment 2 - Part 4.Rmd
-    ├── Chapter 14_A.Rmd
-    ├── Chapter 14_B.Rmd
-    ├── Reproducible_Workflow_1.Rmd
-    ├── Reproducible_Workflow_2.Rmd
-    └── Version Control Diagram.md
+├── old-html/
+├── old-rmd/
+├── ch05-leftovers/
+│   ├── ch05-example.Rmd
+│   └── hack-a-promptChapter 5 Leftovers.qmd
+├── lost-chapters/
+│   ├── Chapter 12 Misc.Rmd
+│   ├── Descriptive Statistics - Signature Assignment 2 - Part 4.Rmd
+│   ├── Chapter 14_A.Rmd
+│   ├── Chapter 14_B.Rmd
+│   ├── Reproducible_Workflow_1.Rmd
+│   └── Reproducible_Workflow_2.Rmd
+└── design-notes/
+└── Version Control Diagram.md
