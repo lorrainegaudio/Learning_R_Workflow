@@ -4,7 +4,6 @@ author: "YOUR NAME"
 date:   "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
   html_document: # To create an HTML document from R Notebook
-
 ---
 
 ```{r setup, include=FALSE}

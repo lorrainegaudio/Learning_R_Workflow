@@ -93,14 +93,10 @@ library(readr)
 library(knitr)
 library(kableExtra)
 
-wildfire_dir <- file.path("data", "wildfire")
-whp_path <- file.path(wildfire_dir, "whp_id.tif")
+terraOptions(progress = 0)           # terra: no text progress
+options(tigris_use_cache = TRUE)     # tigris: avoid re-download chatter
 
-if (!file.exists(whp_path)) {
-  stop("Cannot find: ", whp_path, "\nWorking directory: ", getwd())
-}
-
-whp <- terra::rast(whp_path)
+whp <- terra::rast("data/whp_id.tif") 
 
 ```
 

@@ -745,11 +745,35 @@ Your main takeaway is that strong R work depends on organized notebooks, success
 
 # 📝 Practice Space
 
-This Practice Space helps you check whether you can organize a notebook, read an R help page, use a function argument, and knit your work into an HTML report.
+This Practice Space has two parts.
 
-You will **not** create a new R Notebook in RStudio.
+First, you will answer short multiple-choice questions that check whether you can organize an R Notebook, read an R help page, use a function argument, and explain why knitting is an important reproducibility check.
 
-Instead, choose the best answer for each question. These questions help you check whether you can organize an R Notebook, read R help pages, use function arguments, and understand why knitting is an important reproducibility check.
+Second, you will practice troubleshooting a broken R Markdown file. The goal is to see how code can appear to work in your RStudio Environment but still fail when you knit because knitting starts from a cleaner version of the workflow.
+
+## Part 1: Check your understanding
+
+Choose the best answer for each question in this section.
+
+## Part 2: Troubleshoot a broken R Markdown file
+
+Download these two files and save them in the same course folder:
+
+* <a href="downloads/ch05-help/ch05-practice-space.Rmd" download>ch05-practice-space.Rmd</a>
+* <a href="downloads/ch05-help/ch05-practice-space.RData" download>ch05-practice-space.RData</a>
+
+Then complete the troubleshooting workflow:
+
+1. Open `ch05-practice-space.Rmd` in RStudio.
+2. Load `ch05-practice-space.RData` into RStudio.
+3. Run the code chunks from top to bottom and notice what happens.
+4. Knit the R Markdown file to HTML.
+5. Use the Render/Knit error message to identify what needs to be fixed.
+6. Make one testable change at a time.
+7. Add a short memo near each place where you corrected code.
+8. Knit again after each meaningful correction so you know whether your edit fixed the problem.
+
+Optional support: Use the reading on troubleshooting knit errors with an LLM as a strategy example. Ask for help interpreting the error, identifying likely causes, or making a checklist of what to inspect. Do not ask the LLM to rewrite or complete the report for you.
 
 ---
 

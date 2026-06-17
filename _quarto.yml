@@ -1,9 +1,9 @@
 project:
   type: book
   output-dir: docs
-  execute-dir: project
   resources:
   - "data/wildfire/whp_raw_sample.csv"
+  - [include all data/ and downloads/]
 
 book:
   title: "Goal, Code, Verify, Reflect"

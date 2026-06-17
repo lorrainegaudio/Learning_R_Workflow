@@ -3,6 +3,7 @@ Learning_R_Workflow/
 ├── index.qmd
 ├── Learning_R_Workflow.Rproj
 ├── .gitignore
+├── README.md
 │
 ├── front-matter/
 │   ├── preface.qmd
@@ -107,7 +108,6 @@ Learning_R_Workflow/
 │       │   └── Resnik_Elliott2023.pdf
 │       └── data/
 │           └── Science_Values.rds
-
 │
 ├── activities/
 │   ├── ai-appropriateness/
@@ -124,9 +124,8 @@ Learning_R_Workflow/
 │   │
 │   ├── data-understanding-notebook/
 │   │   ├── descriptive-statistics.Rmd
-│   │   └── data/
-│   │       ├── field_sightings_dictionary.csv
-│   │       └── field_sightings_expanded.csv
+│   │   └── images/
+│   │       └── source_empty_file.png
 │   │
 │   ├── midterm-review/
 │   │   └── term-in-context-review-quest.html
@@ -135,10 +134,9 @@ Learning_R_Workflow/
 │       ├── fire-assignment-part-a.Rmd
 │       ├── fire-assignment-part-b.Rmd
 │       ├── fire-assignment-part-c.Rmd
-│       ├── data/
-│       │   └── whp_id.tif
-│       └── downloads/
-│           └── whp_raw_sample.csv
+│       └── data/
+│          ├── whp_id.tif
+│          └── whp_raw_sample.csv
 │
 ├── back-matter/
 │   └── glossary.Rmd
@@ -155,20 +153,17 @@ Learning_R_Workflow/
 │       └── footer.html
 │
 ├── dev-notes/
+│   ├── file_structure_plan
 │   └── instructor-guide-master.qmd
 │
 └── _archive/
-├── old-html/
-├── old-rmd/
-├── ch05-leftovers/
-│   ├── ch05-example.Rmd
-│   └── hack-a-promptChapter 5 Leftovers.qmd
-├── lost-chapters/
-│   ├── Chapter 12 Misc.Rmd
-│   ├── Descriptive Statistics - Signature Assignment 2 - Part 4.Rmd
-│   ├── Chapter 14_A.Rmd
-│   ├── Chapter 14_B.Rmd
-│   ├── Reproducible_Workflow_1.Rmd
-│   └── Reproducible_Workflow_2.Rmd
-└── design-notes/
-└── Version Control Diagram.md
+    ├── lost-chapters/
+    │   ├── Chapter 12 Misc.Rmd
+    │   ├── Descriptive Statistics - Signature Assignment 2 - Part 4.Rmd
+    │   ├── Reproducible_Workflow_1.Rmd
+    │   ├── Reproducible_Workflow_2.Rmd
+    │   ├── ch05-example.Rmd
+    │   ├── hack-a-promptChapter 5 Leftovers.qmd
+    └── data/
+        ├── field_sightings_dictionary.csv
+        └── field_sightings_expanded.csv

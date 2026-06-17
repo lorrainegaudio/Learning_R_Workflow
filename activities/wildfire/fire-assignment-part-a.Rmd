@@ -109,23 +109,9 @@ library(tigris)
 
 terraOptions(progress = 0)           # terra: no text progress
 options(tigris_use_cache = TRUE)     # tigris: avoid re-download chatter
-```
 
-```{r setup-paths, include=FALSE}
-wildfire_dir <- file.path("data", "wildfire")
+whp_idaho <- terra::rast("data/whp_id.tif") 
 
-whp_path <- file.path(wildfire_dir, "whp_id.tif")
-
-if (!file.exists(whp_path)) {
-  stop(
-    "Cannot find wildfire raster file:\n",
-    whp_path,
-    "\n\nCurrent working directory is:\n",
-    getwd()
-  )
-}
-
-whp_idaho <- terra::rast(whp_path)
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, results = 'hide', fig.cap='Idaho Wildfire Hazard Potential (WHP), continuous index (unitless) from the USFS WHP v2020 raster, clipped to the Idaho boundary. Colors use a viridis gradient (dark purple = lower WHP; yellow = higher WHP); values span approximately 0–64,186. Raster resolution is 240 m in an Albers Equal Area projection; NoData cells are transparent. Red outline shows the TIGER/Line state boundary reprojected to the raster CRS. Idaho subset prepared by Matt Williamson (SPASES Lab, Boise State University); original dataset: Dillon & Gilbertson-Day (2020), USFS Research Data Archive (DOI: 10.2737/RDS-2015-0047-3).'}
@@ -232,6 +218,10 @@ decile_table <- area_by_decile |>
 Explore and wrangling of the raw WHP sample data. 
 
 ## Task 1
+
+**Download**
+
+<a href="data/whp_raw_sample.csv" download>Download whp_raw_sample.csv</a>
 
 **Load Data**
 
