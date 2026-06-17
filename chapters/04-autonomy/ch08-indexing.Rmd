@@ -21,7 +21,7 @@ These skills matter because indexing is how you point R at the part of the data 
 By the end of Chapter 8, you will be able to:
 
 -  📥 Use a loaded CSV file as a data frame in R.
-  🧩 Apply the subsetting template `df[rows, cols]` to select data by 📍 position, 🏷️ name, and 🔍 logical mask.
+-  🧩 Apply the subsetting template `df[rows, cols]` to select data by 📍 position, 🏷️ name, and 🔍 logical mask.
 -  🔎 Check whether your indexing code returned the rows, columns, object type, and values you expected.
 -  ⚠️ Explain how missing values can propagate through logical masks and create confusing filtering results.
 -  🧭 Use `which()` to turn logical conditions into row positions when you want to avoid carrying `NA` values into a subset.
@@ -72,10 +72,8 @@ Intro_to_R/
 
 You will need two data files for this chapter:
 
-- `Values_Transport_dplace.csv`
-- `field_sightings.csv`
-
-You should already have `Values_Transport_dplace.csv` in your folder. Find the `field_sightings.csv` data file in the **👈 Indexing Guided Activity** instructions page. 
+* <a href="data/Values_Transport_dplace.csv" download>Download `Values_Transport_dplace.csv`</a>
+* <a href="data/field_sightings.csv" download>Download `field_sightings.csv`</a>
 
 🎯 Click the download link. **Do not open the downloaded csv.**
 
@@ -125,7 +123,7 @@ library(readr) # Load the readr package for reading CSV files
 field_sightings <- read_csv("field_sightings.csv")
 ```
 ```{r include=FALSE}
-field_sightings <- read_csv("/data/autonomy/field_sightings.csv")
+field_sightings <- read_csv("data/field_sightings.csv")
 ```
 
 🗣 This code uses the `read_csv()` function to read the CSV file named "field_sightings.csv" and assigns the resulting data frame to a variable called `field_sightings`. It it normal to see messages with you load packages.
@@ -937,6 +935,8 @@ The main habit to carry forward is this: after indexing, extracting, or modifyin
 # 📝 Practice Space
 
 This Practice Space uses a new dataset to help you generalize your learning. While the column names differ, the indexing patterns are the same. You will work with `Values_Transport_dplace.csv` focusing on the columns `id`, `name`, `sub_case`, and `year`.
+
+* <a href="data/Values_Transport_dplace.csv" download>Download `Values_Transport_dplace.csv`</a>
 
 Open a new R Notebook and save it in your course folder as: chapter8_practice.Rmd. 
 

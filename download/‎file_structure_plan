@@ -63,7 +63,7 @@ Learning_R_Workflow/
 │   │           ├── ch05-practice-space.Rmd
 │   │           └── ch05-practice-space.RData
 │   │
-│   ├── autonomy/
+│   ├── 04-autonomy/
 │   │   ├── ch07-importing-data.Rmd
 │   │   ├── ch08-indexing.Rmd
 │   │   ├── images/
@@ -71,10 +71,9 @@ Learning_R_Workflow/
 │   │   │       ├── getwd_in_console.png
 │   │   │       └── Packages.png
 │   │   └── data/
-│   │       └── ch07-importing-data/
-│   │           ├── car_prices.xlsx
-│   │           ├── field_sightings.csv
-│   │           └── Values_Transport_dplace.csv
+│   │        ├── car_prices.xlsx
+│   │        ├── field_sightings.csv
+│   │        └── Values_Transport_dplace.csv
 │   │
 │   ├── openmindedness/
 │   │   ├── ch09-github.Rmd
