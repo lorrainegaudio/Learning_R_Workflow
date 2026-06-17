@@ -54,7 +54,7 @@ Learning_R_Workflow/
 │       ├── fire-assignment-part-b.Rmd
 │       └── fire-assignment-part-c.Rmd
 │
-├── data/                    # files that students may download OR files that rendered chapters/activities read
+├── download/                    # files that students may download OR files that rendered chapters/activities read
 │   ├── file_structure_plan  # type "File" 
 │   ├── autonomy/
 │   │   ├── car_prices.xlsx
