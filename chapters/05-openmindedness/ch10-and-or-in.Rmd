@@ -391,7 +391,7 @@ Let's explore each of these three new operators in more detail. In this section,
 Suppose we have two events: A and B. The **And** operator `&` returns `TRUE` only if **both** event A and event B are **true**. It returns `FALSE` if either event A or event B, or both, are false. The "and" is used to combine two or more conditions where all conditions must be true.
 
 ```{r And, out.width='40%', fig.align='center', fig.cap='Figure 1. Venn diagram showing the AND condition. The shaded area is the overlap between A and B, which means only observations that satisfy both conditions are included.', fig.alt='Venn diagram showing the AND operation, with only the overlapping area between A and B shaded.', echo=FALSE}
-knitr::include_graphics("/assets/images/ch10-andor/And.png")
+knitr::include_graphics("images/ch10-andor/And.png")
 ```
 
 🎯 Filter `mtcars` to keep cars that are both automatic (`am == 0`) *and* have miles per gallon less than or equal to 22.
@@ -481,7 +481,7 @@ Suppose we have two events: A and B. The **Or** logical operator `|` returns `TR
 
 
 ```{r Or, out.width='40%', fig.align='center', fig.cap='Figure 2. Venn diagram showing the OR condition. The shaded area includes anything in A or B, which means observations that satisfy either condition, or both conditions, are included.', fig.alt='Venn diagram showing the inclusive OR operation, with both circles A and B shaded, including their overlap.', echo=FALSE} 
-knitr::include_graphics("/assets/images/ch10-andor/Or.png")
+knitr::include_graphics("images/ch10-andor/Or.png")
 ```
 
 Use `|` when you want rows that satisfy at least one requirement. The `|` is located above the Enter key on your keyboard. It is the vertical bar and shares the key with the backslash `\`. Click and hold the Shift key to type `|`.

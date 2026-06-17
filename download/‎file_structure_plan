@@ -75,7 +75,7 @@ Learning_R_Workflow/
 │   │        ├── field_sightings.csv
 │   │        └── Values_Transport_dplace.csv
 │   │
-│   ├── openmindedness/
+│   ├── 05-openmindedness/
 │   │   ├── ch09-github.Rmd
 │   │   ├── ch10-and-or-in.Rmd
 │   │   ├── ch11-dplyr-subsetting.Rmd
@@ -93,15 +93,21 @@ Learning_R_Workflow/
 │   │   └── dev-notes/
 │   │       └── version-control-diagram-prompt.md
 │   │
-│   ├── curiosity/
+│   ├── 06-curiosity/
 │   │   ├── ch12-recoding.Rmd
 │   │   ├── ch13-grouped-summaries.Rmd
-│   │   ├── ch14-chaining-PENDING.Rmd
-│   │   └── ch17-string-detect-boundaries-PENDING.Rmd
+│   │   └── ch14-chaining.Rmd
 │   │
-│   └── thoroughness/
+│   └── 07-thoroughness/
 │       ├── ch15-probability-functions.Rmd
-│       └── ch16-ggplot2.Rmd
+│       ├── ch16-ggplot2.Rmd
+│       ├── ch17-string-detect.Rmd
+│       ├── dev-notes/
+│       │   ├── Science_Values_Creation.Rmd
+│       │   └── Resnik_Elliott2023.pdf
+│       └── data/
+│           └── Science_Values.rds
+
 │
 ├── activities/
 │   ├── ai-appropriateness/

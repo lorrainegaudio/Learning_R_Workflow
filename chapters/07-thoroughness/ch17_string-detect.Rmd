@@ -1,5 +1,5 @@
 ---
-title: "Lesson 14"
+title: "Chapter 17"
 author: "by Lorraine Gaudio"
 date:   "`r paste('Lesson generated on', format(Sys.Date(), '%B %d, %Y'))`"
 
@@ -10,22 +10,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# ❄️ Almost done with Intro to R! 
+# Overview 
 
-In lesson 14, We explore thematic coding and data filtering. Many datasets include text—movie genres, country names, survey answers. You often need to *find* rows that mention certain words  or exact terms. Today you’ll learn to combine `str_detect()` with `dplyr::filter()` on both **row names** and **character columns**, using word boundaries (`\\b`) and alternation (`|`) so your patterns are precise.
+In Chapter 17, We explore thematic coding and data filtering. Many datasets include text—movie genres, country names, survey answers. You often need to *find* rows that mention certain words  or exact terms. Today you’ll learn to combine `str_detect()` with `dplyr::filter()` on both **row names** and **character columns**, using word boundaries (`\\b`) and alternation (`|`) so your patterns are precise.
 
 
-To begin Lesson 14, follow these steps:
+To begin Chapter 17, follow these steps:
 
 1. Open your course project for RStudio 
    
 2. Create a new file. From the file types we have used so far, pick which file type you want to use. (File > New File > ???).
 
-3. Type in the code provided in this document as you follow along with the video. Pause the video at anytime to answer assignment questions, dig deeper or add memo notes.
+**Chapter Overview**
 
-**Lesson Overview**
-
-By the end of Lesson 14 you will be able to:
+By the end of Chapter 17 you will be able to:
 
 1. ⚡ Remember – Recall `str_detect()`, word boundaries `\\b`, and `|`.
 
@@ -165,10 +163,14 @@ match_counts
 
 # Inspect the Corpus
 
-Load the lesson corpus (Resnik & Elliott passages):
+Download the Chapter corpus (Resnik & Elliott passages):
+
+<a href="data/Science_Values.rds" download>Download Science_Values.rds</a>
+
+Load the Chapter corpus (Resnik & Elliott passages):
 
 ```{r , eval=FALSE}
-load("Lesson_14_Workspace.RData")  # creates Science_Values
+Science_Values <- readRDS("Science_Values.rds")  # creates Science_Values
 ```
 
 ```{r , eval=FALSE}

@@ -6,7 +6,8 @@ project:
   - "data/wildfire/whp_raw_sample.csv"
 
 book:
-  title: "Introduction to R Programming Guided Activities"
+  title: "Goal, Code, Verify, Reflect"
+  subtitle: "Guided Activities for Learning R Workflow"
   author: "Lorraine Gaudio"
   search: true
   chapters:
