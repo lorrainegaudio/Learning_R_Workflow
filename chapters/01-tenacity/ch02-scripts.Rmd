@@ -52,7 +52,7 @@ Method A. **File Menu**
 
 2. Select New File and then R Script. 
 
-![Figure 1. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/new_rscript.png)
+![Figure 1. The RStudio Script Editor pane with a script open.](images/ch02-scripts/new_rscript.png)
 
 Method B. **Keyboard Shortcut**
 
@@ -78,7 +78,7 @@ nine <- 9
 
 🎯 Place your cursor on each line and click Run (or press Ctrl+Enter on Windows/Linux or Cmd+Return on macOS) to send that line to the Console where it executes.
 
-![Figure 5. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/run_script.png)
+![Figure 5. The RStudio Script Editor pane with a script open.](images/ch02-scripts/run_script.png)
 
 ```{r, eval=FALSE}
 # Run one line
@@ -86,7 +86,7 @@ nine <- 9
 
 🎯 Select multiple lines to run them together.
 
-![Figure 2. The RStudio Script Editor pane with a script open. Two lines are highlighted and both were run in the console using Ctrl+Enter.](/assets/images/ch02-scripts/run_script2.png)
+![Figure 2. The RStudio Script Editor pane with a script open. Two lines are highlighted and both were run in the console using Ctrl+Enter.](images/ch02-scripts/run_script2.png)
 
 
 ```{r, eval=FALSE}
@@ -95,7 +95,7 @@ nine <- 9
 
 🎯 Click Source to run the entire script at once.
 
-![Figure 3. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/run_source.png)
+![Figure 3. The RStudio Script Editor pane with a script open.](images/ch02-scripts/run_source.png)
 
 ```{r, eval=FALSE}
 # Source the entire script
@@ -113,7 +113,7 @@ Method A. **Save icon**
 
 1. Click the Save icon (floppy disk) in the toolbar of the Script Editor pane.
 
-![Figure 4. The RStudio Script Editor pane with a script open.](/assets/images/ch02-scripts/save_icon.png)
+![Figure 4. The RStudio Script Editor pane with a script open.](images/ch02-scripts/save_icon.png)
 
 Method B. **File Menu**
 
