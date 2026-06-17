@@ -15,12 +15,8 @@ Learning_R_Workflow/
 │   │   ├── ch03-vectors.Rmd
 │   │   └── ch04-structures.Rmd
 │   ├── courage/
-│   │   ├── ch05-help-prompting.Rmd
 │   │   ├── ch05-help.Rmd
-│   │   ├── ch05-missing-backtick-example.Rmd
-│   │   ├── ch05-practice-space.Rmd
-│   │   ├── ch05-practice-space.RData
-│   │   ├── ch06-practice-space.Rmd
+│   │   ├── ch05-help-prompting.Rmd
 │   │   └── ch06-missing-values.Rmd
 │   ├── autonomy/
 │   │   ├── ch07-importing-data.Rmd
@@ -58,18 +54,22 @@ Learning_R_Workflow/
 │       ├── fire-assignment-part-b.Rmd
 │       └── fire-assignment-part-c.Rmd
 │
-├── data/
+├── data/                    # files that students may download OR files that rendered chapters/activities read
 │   ├── file_structure_plan  # type "File" 
 │   ├── autonomy/
 │   │   ├── car_prices.xlsx
 │   │   ├── field_sightings.csv
 │   │   └── Values_Transport_dplace.csv
-│   data-understanding-notebook/
+│   ├── data-understanding-notebook/
 │   │   ├── field_sightings_dictionary.csv
 │   │   └── field_sightings_expanded.csv 
-│   └── wildfire/
-│       ├── whp_raw_sample.csv
-│       └── whp_id.tif
+│   ├── wildfire/
+│   │   ├── whp_raw_sample.csv
+│   │   └── whp_id.tif
+│   └── courage/
+│       ├── ch05-missing-backtick-example.Rmd
+│       ├── ch05-practice-space.Rmd
+│       └── ch05-practice-space.RData
 │
 ├── assets/
 │   ├── images/
@@ -121,15 +121,15 @@ Learning_R_Workflow/
 │   │  ├── ch10-andor/
 │   │  │   ├── And.png
 │   │  │   └── Or.png
-│   │  ├── activities
-│   │  │   └── source_empty_file.png
-│   │  ├── styles/
-│   │  │   ├── guided-book.css
-│   │  │   └── legacy-rmarkdown.css
-│   │  ├── pdf/
-│   │  │   ├── header.tex
-│   │  │   └── strip-emoji.lua
-│      └── legacy-html/
+│   ├── activities
+│   │   └── source_empty_file.png
+│   ├── styles/
+│   │   ├── guided-book.css
+│   │   └── legacy-rmarkdown.css
+│   ├── pdf/
+│   │   ├── header.tex
+│   │   └── strip-emoji.lua
+│       └── legacy-html/
 │          ├── header.html
 │          └── footer.html  
 │
