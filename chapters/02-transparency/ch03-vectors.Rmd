@@ -185,7 +185,7 @@ Method A. **Toolbar Button**
 Click the **Insert Chunk** button in the toolbar and choose R from the drop-down list.
 In RStudio, the insert chunk button usually looks like a green button with a C or an icon depending on version.
 
-![R Notebook Toolbar with Insert Chunk Button Highlighted](/assets/images/ch03-vector/Code_chunk.png)
+![R Notebook Toolbar with Insert Chunk Button Highlighted](images/ch03-vector/Code_chunk.png)
 
 Method B. **Keyboard Shortcut**
 
@@ -213,13 +213,13 @@ Method A. **Run Menu**
 Click the `Run` menu at the top of RStudio and select `Run Current Chunk` or `Run All Chunks`.
 
 
-![R Notebook Code Chunk with Run Button Highlighted](/assets/images/ch03-vector/run_menu.png)
+![R Notebook Code Chunk with Run Button Highlighted](images/ch03-vector/run_menu.png)
 
 Method B. **Play Button**
 
 Click the green play button (▶) at the top-right of the chunk. 
 
-![R Notebook Code Chunk play button](/assets/images/ch03-vector/play_button.png)
+![R Notebook Code Chunk play button](images/ch03-vector/play_button.png)
 
 Method C. **Keyboard Shortcut**
 
@@ -304,7 +304,7 @@ ___
 
 🧩 **Memo Example**
 
-![R Notebook showing arithmetic code with commented-out error lines, pasted console errors (“unexpected ‘,’” and “object not found”), memos identifying the typo, missing object, and case sensitivity, and corrected code printing the ratio.](/assets/images/ch03-vector/Memo_Example.png)
+![R Notebook showing arithmetic code with commented-out error lines, pasted console errors (“unexpected ‘,’” and “object not found”), memos identifying the typo, missing object, and case sensitivity, and corrected code printing the ratio.](images/ch03-vector/Memo_Example.png)
 
 > 🧐 **Notice:** The student (1) ✍️ kept but commented out (`#`) the code with the errors, (2) ✍️ copied the error message and saved it in the notebook as a memo so the troubleshooting process was easily documented, (3) 🗣 composed memos that identified the issues (a typo with a comma, using an object before it was created, and case sensitivity), and (4) ⚡ revised the code to fix the errors. 
 
@@ -338,7 +338,7 @@ ___
 
 🧩 **Memo Example**
 
-![R Notebook chunk subtracting vectors of different lengths, output showing the recycled subtraction results, and a memo explaining that R repeats the shorter vector to match the longer one (with the AI tool credited).](/assets/images/ch03-vector/Memo_Example2.png) 
+![R Notebook chunk subtracting vectors of different lengths, output showing the recycled subtraction results, and a memo explaining that R repeats the shorter vector to match the longer one (with the AI tool credited).](images/ch03-vector/Memo_Example2.png) 
 
 > 🧐 **Notice:** The student 👀 cited the specific AI tool used to help her deepen her understanding and 🗣 explained the final results in her own words.
 
@@ -432,7 +432,7 @@ ___
 
 🧩 **Memo Example**
 
-![R Notebook using paste() to combine “yellow” and “banana” into “yellow banana,” then class(sentence) returning “character,” followed by a memo noting confusion about what “character” means.](/assets/images/ch03-vector/Memo_Example3.png)
+![R Notebook using paste() to combine “yellow” and “banana” into “yellow banana,” then class(sentence) returning “character,” followed by a memo noting confusion about what “character” means.](images/ch03-vector/Memo_Example3.png)
 
 > 🧐 **Notice:** The student (1) 🗣 composed a memo expressing confusion about the term "character." This is a useful memo because the student identified a specific point of confusion instead of skipping over it. A strong next step would be to review the course materials, ask a peer or instructor, or use an approved AI tool and document what helped. Then return to the practice space and document what was discovered.
 
@@ -527,7 +527,7 @@ ___
 
 **🧩 Memo Example**
 
-![R Notebook creating a character vector of class standings, converting it to a factor, and showing levels() plus mode()/typeof() outputs; memo questions why the factor prints words but stores integer codes, with a follow-up memo summarizing the explanation (integer codes + levels labels).](/assets/images/ch03-vector/Memo_Example4.png)
+![R Notebook creating a character vector of class standings, converting it to a factor, and showing levels() plus mode()/typeof() outputs; memo questions why the factor prints words but stores integer codes, with a follow-up memo summarizing the explanation (integer codes + levels labels).](images/ch03-vector/Memo_Example4.png)
 
 > 🧐 **Notice:** The student (1) ✅ confirmed the original object’s class (character) and then created a factor version, (2) 🔎 checked multiple diagnostics (mode(), typeof(), and levels()) to investigate what changed, (3) ✍️ wrote a memo that pinpointed the exact contradiction (“stored as numbers but prints words”) instead of hand-waving, and (4) 🤖 used an AI tool to research the mechanism and then summarized the explanation accurately in their own words (integer codes + levels labels).
 

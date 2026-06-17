@@ -33,7 +33,7 @@ Learning_R_Workflow/
 │   │           ├── run_source.png
 │   │           └── save_icon.png
 │   │
-│   ├── transparency/
+│   ├── 02-transparency/
 │   │   ├── ch03-vectors.Rmd
 │   │   ├── ch04-structures.Rmd
 │   │   └── images/
@@ -46,7 +46,7 @@ Learning_R_Workflow/
 │   │           ├── Memo_Example3.png
 │   │           └── Memo_Example4.png
 │   │
-│   ├── courage/
+│   ├── 03-courage/
 │   │   ├── ch05-help.Rmd
 │   │   ├── ch05-help-prompting.Rmd
 │   │   ├── ch06-missing-values.Rmd

@@ -153,7 +153,7 @@ The "outline pane" in RStudio uses your Markdown headings to create a clickable 
 
 ---
 
-![Figure 1. Screenshot of R markdown formating](/assets/images/ch05-help/Memo_Example_heading.png)
+![Figure 1. Screenshot of R markdown formating](images/ch05-help/Memo_Example_heading.png)
 
 ---
 
@@ -237,7 +237,7 @@ In the Source pane, click the **Knit button** (it looks like a ball of yarn with
 
 ---
 
-![Figure 2. Screenshot of knit button](/assets/images/ch05-help/Memo_Example_knithtml3.png)
+![Figure 2. Screenshot of knit button](images/ch05-help/Memo_Example_knithtml3.png)
 
 ---
 
@@ -249,7 +249,7 @@ In the Source pane, click the the **Preview menu** drop down button and select K
 
 ---
 
-![Figure 3. Screenshot of Preview button](/assets/images/ch05-help/Memo_Example_knithtml.png)
+![Figure 3. Screenshot of Preview button](images/ch05-help/Memo_Example_knithtml.png)
 
 ---
 
@@ -259,7 +259,7 @@ Below is the result you get after knitting to HTML
 
 ---
 
-![Figure 4. Screenshot of resulting HTML report](/assets/images/ch05-help/Memo_Example_knithtml2.png)
+![Figure 4. Screenshot of resulting HTML report](images/ch05-help/Memo_Example_knithtml2.png)
 
 ---
 
